@@ -93,37 +93,37 @@ function App() {
   ])
 
   //WILL POPULATE AS MANY CARDS AS YOU WANT, BUT ONLY 50 PER HOUR. SORRY
-  try {
-    useEffect(() => {
-      //empty array for all promises to be returned
-      const fetchPromises = [];
-      for (let i = 0; i < 8; i++) {
-        //for each fetchData() call, add its result to the array of promises
-        fetchPromises.push(fetchData());
-      }
+  // try {
+  //   useEffect(() => {
+  //     //empty array for all promises to be returned
+  //     const fetchPromises = [];
+  //     for (let i = 0; i < 8; i++) {
+  //       //for each fetchData() call, add its result to the array of promises
+  //       fetchPromises.push(fetchData());
+  //     }
 
-      //Promise.all takes an array of promises and returns a single promise that resolves when all of the input promises have resolved.
-      Promise.all(fetchPromises).then(responses => {
-        const placeholderCards = responses.map((response, index) => {
-          return {
-            cardImageUrl: response.data.urls.regular,
-            cardName: response.data.alt_description,
-            index: index
-          };
-        });
-        setCards(placeholderCards);
-      }).catch(error => {
-        console.error("Error fetching data:", error);
-        // Handle error appropriately
-      });
+  //     //Promise.all takes an array of promises and returns a single promise that resolves when all of the input promises have resolved.
+  //     Promise.all(fetchPromises).then(responses => {
+  //       const placeholderCards = responses.map((response, index) => {
+  //         return {
+  //           cardImageUrl: response.data.urls.regular,
+  //           cardName: response.data.alt_description,
+  //           index: index
+  //         };
+  //       });
+  //       setCards(placeholderCards);
+  //     }).catch(error => {
+  //       console.error("Error fetching data:", error);
+  //       // Handle error appropriately
+  //     });
 
-    }, []);
-  }
-  catch{ (error => {
-      console.error("Error fetching data:", error);
-      // Handle error appropriately
-    });
-  }
+  //   }, []);
+  // }
+  // catch{ (error => {
+  //     console.error("Error fetching data:", error);
+  //     // Handle error appropriately
+  //   });
+  // }
 
 
     //NOTE: Index was a Horrible name choice. If I did again, would choose "id"

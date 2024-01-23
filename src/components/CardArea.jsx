@@ -18,7 +18,7 @@ export default function CardArea({ cards, handleClick }) {
 
                 {
                     cards.map(card => (
-                        <div key={card.index} onClick={() => handleCardClick(card.index)}>
+                        <div role="card" key={card.index} onClick={() => handleCardClick(card.index)}>
 
                             <ActionAreaCard
                                 card={card}
