@@ -1,4 +1,4 @@
-# React CV 
+# React Memory Card Game 
 Odin Project exercise. Memory game hooked up to external API. Try and select cards you have not yet selected. Cards re-order on click. If you click a previously-slected card, high score is saved, but current score goes back to zero. Card content populates randomly/dynamically from external image API (unless you reload too many times in one hour, then it defaults to dummy data :/). The focus was to understand API calls and complex state management.
 
 ## View Deployed Site
