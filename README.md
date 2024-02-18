@@ -1,5 +1,5 @@
 # React CV 
-Odin Project exercise. Memory game hooked up to external API. Try and guess select cards you have not yet selected. Cards re-order on click. If you click a slected card, high score is saved, but current score goes back to zero. Cards fill randomly/dynamically from external image API (unless you reload too many times in one hour, then it defaults to dummy data :/). The focus was to understand passing props, raising state, and data binding. Lord forgive the folder structure and CSS.
+Odin Project exercise. Memory game hooked up to external API. Try and select cards you have not yet selected. Cards re-order on click. If you click a previously-slected card, high score is saved, but current score goes back to zero. Card content populates randomly/dynamically from external image API (unless you reload too many times in one hour, then it defaults to dummy data :/). The focus was to understand API calls and complex state management.
 
 ## View Deployed Site
 https://taupe-trifle-4cdec4.netlify.app/
